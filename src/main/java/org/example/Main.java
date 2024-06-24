@@ -2,8 +2,7 @@ package org.example;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
-import org.example.entities.Product;
+import org.example.entities.Products;
 import org.example.persistence.CustomPersistenceUnitInfo;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 
@@ -21,8 +20,8 @@ public class Main {
 
         try {
             em.getTransaction().begin();
-            Product p = new Product();
-            p.setId(2L);
+            Products p = new Products();
+            p.setId(4L);
             p.setName("One");
 
             em.persist(p);

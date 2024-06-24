@@ -2,9 +2,11 @@ package org.example.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Entity(name = "product")
-public class Product {
+@Entity
+@Table(name = "product")
+public class Products {
 
     @Id
     private Long id;
