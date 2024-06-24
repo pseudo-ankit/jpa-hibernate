@@ -31,9 +31,9 @@ public class CustomPersistenceUnitInfo implements PersistenceUnitInfo {
     @Override
     public DataSource getJtaDataSource() {
         HikariDataSource ds = new HikariDataSource();
-        ds.setJdbcUrl("jdbc:postgresql://localhost/demo");
-        ds.setUsername("postgres");
-        ds.setPassword("postgres");
+        ds.setJdbcUrl("jdbc:mysql://localhost/root");
+        ds.setUsername("root");
+        ds.setPassword("root");
         return ds;
     }
 
